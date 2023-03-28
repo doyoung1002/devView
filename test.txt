@@ -1,0 +1,41 @@
+01. 익스텐션에서 파이썬 설치되어있는지 확인 후 파이썬 버전 확인
+    python --version
+    한솔 기준 Python 3.8.6
+
+02. 우측 하단 Spaces: 2로 간격 통일
+
+03. 경로의 마지막 부분이 'devView'인지 확인하고 파이썬 패키지 설치
+    윈도우 : python -m venv venv
+    맥 : python3 -m venv venv
+
+04. venv 활성화하기
+    (1) 터미널 환경에서 경로의 마지막 부분이 'devView'인지 확인
+    (2) 파이썬 버전을 클릭해 venv로 클릭 -> 새 터미널 열기
+
+05. 패키지 설치
+    <필수 설치>
+    pip install dnspython
+    pip install pymongo
+    pip install flask
+    pip install jinja2
+    <필요 시 설치>
+    pip install requests (JS에서의 fetch 역할을 하는 라이브러리)
+    pip install bs4 (bs4를 이용해 크롤링을 해올 때 '파싱이 용이해진 html로 만들 수 있음)
+
+06. pymongo로 DB 조작하기
+  # 저장 - 예시
+  doc = {'name':'bobby','age':21}
+  db.users.insert_one(doc)
+
+  # 한 개 찾기 - 예시
+  # db에 users라는 테이블을 사용하겠다는 뜻임
+  user = db.users.find_one({'name':'bobby'})
+
+  # 여러개 찾기 - 예시 ( _id 값은 제외하고 출력)
+  all_users = list(db.users.find({},{'_id':False}))
+
+  # 바꾸기 - 예시
+  db.users.update_one({'name':'bobby'},{'$set':{'age':19}})
+
+  # 지우기 - 예시
+  db.users.delete_one({'name':'bobby'})

@@ -1,0 +1,56 @@
+:root {
+  /* Color */
+  --color-purple: #7149C6;
+  --color-black: #1A1A1A;
+}
+
+.wrap {
+  width: 1200px;
+  margin: auto;
+}
+
+/* navbar */
+#navbar {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__logo {
+  font-size: 18px;
+}
+
+.navbar__menu {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar__menu li {
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 15px;
+}
+
+.navbar__menu li a {
+  color: var(--color-black);
+}
+
+/* TODO font color 애니메이션 추후 수정 */
+.navbar__menu li:hover,
+.navbar__menu li:active {
+  background-color: var(--color-purple);
+  transition-property: background-color, color;
+  transition-duration: 0.8s;
+  cursor: pointer;
+}
+
+.navbar__menu li:hover a{
+  color: white;
+}
+
+.navbar__team {
+  font-size: 15px;
+  font-style: oblique;
+  color: grey;
+}
