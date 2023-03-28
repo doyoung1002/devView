@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -19,28 +19,13 @@
           <button class="modal-close">
             <span class="material-symbols-outlined"> close </span>
           </button>
-          <form class="form" action="./app.py" method="post">
+          <form class="form" action="" method="get">
             <h2>영상제목</h2>
-            <input
-              id="video-name"
-              name="video-name"
-              placeholder="영상제목을 입력해주세요"
-              type="text"
-            />
+            <input placeholder="영상제목을 입력해주세요" type="text" />
             <h2>설명</h2>
-            <input
-              id="video-desc"
-              name="video-desc"
-              placeholder="설명을 입력해주세요"
-              type="text"
-            />
+            <input placeholder="설명을 입력해주세요" type="text" />
             <h2>링크</h2>
-            <input
-              id="video-link"
-              name="video-link"
-              placeholder="링크를 삽입해주세요"
-              type="url"
-            />
+            <input placeholder="링크를 삽입해주세요" type="url" />
             <button type="submit" class="btn-submit">등록하기</button>
           </form>
         </div>
@@ -52,32 +37,9 @@
       const modal = document.querySelector(".modal");
       const btnModalClose = document.querySelector(".modal-close");
       const btnSumit = document.querySelector(".btn-submit");
-      const body = document.querySelector("body");
-      const videoNameVal = document.querySelector("#video-name");
-      const videoDescVal = document.querySelector("#video-desc");
-      const videoLinkVal = document.querySelector("#video-link");
 
       function handleEvent(e) {
         e.preventDefault();
-        let formData = new FormData();
-        formData.append("videoname_give", videoNameVal.value);
-        formData.append("videodesc_give", videoDescVal.value);
-        formData.append("videolink_give", videoLinkVal.value);
-
-        fetch("/modal", {
-          headers: {
-            Accept: "application / json",
-          },
-          method: "POST",
-          body: formData,
-        })
-          .then((res) => res.json())
-          .then((data) => {
-            window.location.reload();
-          })
-          .catch((error) => {
-            console.log(error);
-          });
       }
 
       function handleModalClose() {

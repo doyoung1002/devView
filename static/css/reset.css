@@ -76,6 +76,7 @@ header,
 hgroup,
 menu,
 nav,
+button,
 output,
 ruby,
 section,
@@ -88,7 +89,7 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font-family: 'Noto Sans KR', sans-serif;
+  font: inherit;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -111,9 +112,6 @@ body {
 ol,
 ul {
   list-style: none;
-}
-a {
-  text-decoration: none;
 }
 blockquote,
 q {
