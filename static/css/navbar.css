@@ -13,7 +13,7 @@
 #navbar {
   display: flex;
   margin-top: 30px;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -45,6 +45,7 @@
   cursor: pointer;
 }
 
+
 .navbar__menu li:hover a{
   color: white;
 }
@@ -53,4 +54,60 @@
   font-size: 15px;
   font-style: oblique;
   color: grey;
+}
+
+.navbar__toggle {
+  padding-top: 5px;
+	font-size: 24px;
+  background-color: transparent;
+  border: none;
+	display: none;
+}
+
+/* 미디어쿼리 */
+@media (max-width: 1200px) {
+ #navbar {
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  position: fixed;
+  top: 12px;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  z-index: 1;
+ }
+
+  .navbar__toggle {
+    display: block;
+    position: absolute;
+    top: -9px;
+    right: 140px;
+    cursor: pointer;
+  }
+
+  .navbar__menu {
+    display: none;
+  }
+  
+  .navbar__menu.open {
+    width: 200px;
+    margin: auto 120px auto auto;
+    display: block;
+    border: 1px solid var(--color-purple);
+    border-radius: 15px;
+    background-color: white;
+    opacity: 0.9;
+    z-index: 1;
+  }
+  
+  .navbar__menu.open li {
+    border-radius: 10px;
+  }
+
+  .navbar__team {
+    display: none;
+  }
+
 }
