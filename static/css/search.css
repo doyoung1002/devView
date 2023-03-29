@@ -1,0 +1,16 @@
+.item {
+  float: left;
+  margin: 16px;
+}
+
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 6x;
+  margin: 0;
+}
+
+p {
+  font-size: 14px;
+  margin: 0;
+}
