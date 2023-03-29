@@ -1,8 +1,11 @@
+.list {
+  clear: both;
+}
+
 .item {
   float: left;
   margin: 16px;
 }
-
 
 h1 {
   font-size: 36px;

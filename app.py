@@ -21,7 +21,6 @@ def home():
 @app.route("/modal", methods=["GET"])
 def value_get():
   test_data = list(db.value.find({}, {'_id': False}))
-  print("adfadsfasdfasdfadfasdf")
   return jsonify({'result': test_data})
 
 
