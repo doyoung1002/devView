@@ -20,7 +20,6 @@ Front-end
 </div>
 
 
-
 Back-end
 <div align="left">
 <img src="https://img.shields.io/badge/python-3776AB?style=flat&logo=python&logoColor=white"/>
