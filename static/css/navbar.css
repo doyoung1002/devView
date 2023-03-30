@@ -17,8 +17,10 @@
   align-items: center;
 }
 
-.navbar__logo {
+.navbar__logo a {
   font-size: 18px;
+  color: black;
+  font-weight: bold;
 }
 
 .navbar__menu {
