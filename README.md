@@ -14,7 +14,7 @@
 ## <사용기술/>
 Design
 <div align="left">
-	<img src="https://img.shields.io/badge/Figma-F24E1Estyle=flat&logo=Figma&logoColor=white" />
+	<img src="https://img.shields.io/badge/Figma-F24E1Estyle=flat&logo=figma&logoColor=white" />
 
 </div>
 
