@@ -10,6 +10,13 @@
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+.modal-open{
+  transition:all .3s ease;
+ 
+}
+.modal-open:hover{
+  background-color: #391489;
+}
 .modal_body {
   position: absolute;
   top: 50%;

@@ -39,7 +39,8 @@ button {
 
 /* write */
 .write {
-	margin-top: 60px;
+  margin-top: 12px;
+
   margin-bottom: 60px;
 	display: flex;
 	justify-content: center;
@@ -67,14 +68,18 @@ button {
   width: 49%;
   height: 476px;
 	margin-bottom: 40px;
-	border-bottom: 1px solid #E2E2E2;
+	border-bottom: 1px solid #cdcdcd;
   /* display: flex; */
 }
 
 .itemImage {
   width: 100%;
 	height: 350px;
+  transition: .3s ease;
 }
+
+
+
 
 .itemImage a img {
   width: 100%;
