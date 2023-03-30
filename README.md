@@ -31,10 +31,10 @@ Back-end
 <img src="https://img.shields.io/badge/Flask-000000?style=flat&logo=python&logoColor=white"/>
 </div>
 
+
 library
 <div align="left">
 <img src="https://img.shields.io/badge/Swiper-6332F6?style=flat&logo=python&logoColor=white"/>
-
 </div>
 
 
