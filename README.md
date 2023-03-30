@@ -21,6 +21,8 @@
 ![Untitled](https://user-images.githubusercontent.com/96641210/228721899-eb3302e3-8a9e-43d1-aa3c-16e2670d5cc5.png)
 ### 상세페이지
 ![상세페이지](https://user-images.githubusercontent.com/96641210/228722082-e944a85d-fc1b-41bd-bfb8-dee040f9b49f.png)
+### 모달팝업
+![모달](https://user-images.githubusercontent.com/96641210/228722246-45282fe1-f667-4984-85bc-2a68414119f4.png)
 
 ## <구현 기능/>
 - 댓글 기능
