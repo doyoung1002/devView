@@ -11,7 +11,14 @@
 - 최유리
 
 ## <사용기술/>
-<span style="color:red">Front-end</span>
+Front-end
+- JavaScript ES6
+- html,css
+- swiper.js 라이브러리
+
+Back-end
+- python
+- mongoDB
 
 ## <제작 기간/>
 2023-03-27 ~ 2023-03-30
@@ -25,10 +32,9 @@
 ![모달](https://user-images.githubusercontent.com/96641210/228722246-45282fe1-f667-4984-85bc-2a68414119f4.png)
 
 ## <구현 기능/>
-- 댓글 기능
-- 별점 넣기
 - 리뷰 작성
 - 카테고리 검색 기능
+- 페이지 슬라이드 기능
 
 ## <관련 링크/>
 [devView 노션 페이지](https://www.notion.so/17-29c85bad320f4d2590d4faa5c37b123b)
