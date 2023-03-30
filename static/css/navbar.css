@@ -36,17 +36,20 @@
   color: var(--color-black);
 }
 
-/* TODO font color 애니메이션 추후 수정 */
-.navbar__menu li:hover,
-.navbar__menu li:active {
+.navbar__menu li:hover {
   background-color: var(--color-purple);
   transition-property: background-color, color;
   transition-duration: 0.8s;
   cursor: pointer;
 }
 
+.navbar__menu .active {
+  background-color: var(--color-purple);
+}
 
-.navbar__menu li:hover a{
+
+.navbar__menu li:hover a,
+.navbar__menu .active a {
   color: white;
 }
 
