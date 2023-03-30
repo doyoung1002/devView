@@ -17,6 +17,7 @@
 2023-03-27 ~ 2023-03-30
 
 ## <와이어프레임/>
+![Untitled](https://user-images.githubusercontent.com/96641210/228721899-eb3302e3-8a9e-43d1-aa3c-16e2670d5cc5.png)
 
 ## <구현 기능/>
 - 댓글 기능
