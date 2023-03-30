@@ -13,7 +13,12 @@
 
 ## <사용기술/>
 Design
-Figma
+<div align="left">
+	<img src="https://img.shields.io/badge/Figma-F24E1Estyle=flat&logo=Figma&logoColor=white" />
+
+</div>
+
+
 
 
 Front-end
