@@ -17,9 +17,9 @@
 2023-03-27 ~ 2023-03-30
 
 ## <와이어프레임/>
-###메인페이지
+### 메인페이지
 ![Untitled](https://user-images.githubusercontent.com/96641210/228721899-eb3302e3-8a9e-43d1-aa3c-16e2670d5cc5.png)
-###상세페이지
+### 상세페이지
 ![상세페이지](https://user-images.githubusercontent.com/96641210/228722082-e944a85d-fc1b-41bd-bfb8-dee040f9b49f.png)
 
 ## <구현 기능/>
