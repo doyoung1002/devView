@@ -1,5 +1,5 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=DevView&fontSize=90" />
-# 항해99 14기 17조 토이프로젝트 💻DevView
+#항해99 14기 17조 토이프로젝트 💻DevView
 
 ## <프로젝트 소개/>
 개발자 **지망생, 취준생**을 위한 영상 리뷰 소셜서비스
