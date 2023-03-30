@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=내용입력&fontSize=90" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=DevView&fontSize=90" />
 # 항해99 14기 17조 토이프로젝트 💻DevView
 
 ## <프로젝트 소개/>
