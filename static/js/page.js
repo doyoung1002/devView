@@ -47,13 +47,22 @@ function append_list(rows) {
 
   rows.forEach((element) => {
     const videolink = element['videolink'];
-    const thumbnail = videolink.slice(-11);
+    const thumbnail = videolink.slice(32);
+    let link = '';
+
+    console.log(thumbnail.length)
+
+    if (thumbnail.length === 11) {
+      link = `https://i1.ytimg.com/vi/${thumbnail}/sddefault.jpg`;
+    } else {
+      link = '../static/images/default.png';
+    }
 
     const temp_html = `
       <div class="item">
         <div class="itemImage">
           <a href="${videolink}" target="_blank">
-            <img src="https://i1.ytimg.com/vi/${thumbnail}/sddefault.jpg" alt="">
+            <img src="${link}" alt="">
           </a>
         </div>
         <div class="itemList">
