@@ -6,14 +6,14 @@ window.onload = () => {
 // 전체 리스트
 function show_list() {
   fetch("/modal", { headers: { Accept: "application / json", }, method: "GET" })
-    .then((res) => res.json())
-    .then(data => {
-      const rows = data['result'];
-      append_list(rows);
-    })
-    .catch((error) => {
-      console.log(error)
-    })
+  .then((res) => res.json())
+  .then(data => {
+    const rows = data['result'];
+    append_list(rows);
+  })
+  .catch((error) => {
+    console.log(error)
+  })
 }
 
 // 키워드 검색
@@ -31,7 +31,7 @@ document.querySelector('#searchIcon').addEventListener('click', async () => {
   // 서버에서 받은 응답을 JSON 형태로 파싱
   const data = await response.json();
 
-  if (data.length === 0) {
+  if(data.length === 0) {
     alert('일치하는 추천영상이 없습니다!')
   } else {
     append_list(data);
