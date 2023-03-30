@@ -18,7 +18,7 @@ app = Flask(__name__)
 # 메인화면 (한솔)
 @app.route('/')
 def home():
-   return render_template('index.html')
+  return render_template('index.html')
 
 # 상세페이지
 @app.route('/page')
@@ -66,7 +66,7 @@ def modal_post():
   }
   db.board.insert_one(doc)
   return jsonify({'msg': '저장완료'})
-   
+  
 # flask port
 if __name__ == '__main__':  
 	# 5000포트 사용 중이라고 뜨면 포트 번호를 5001로 변경!
