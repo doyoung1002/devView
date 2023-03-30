@@ -1,7 +1,7 @@
 # config.json
 import json
 with open("config.json", "r", encoding="utf-8") as f:
-   config = json.load(f)
+  config = json.load(f)
 
 #pymongo
 from pymongo import MongoClient
@@ -52,22 +52,22 @@ def search():
 # 상세페이지 - 글 작성 (용식)
 @app.route('/modal', methods=['POST'])
 def modal_post():
-   videoname_receive = request.form['videoname_give']
-   videodesc_receive = request.form['videodesc_give']
-   videolink_receive = request.form['videolink_give']
-   board_receive = request.form['id_give']
-   url_receive = request.form['url_give']
-   doc = {
-      'boardId'   : board_receive,
-      'videoname' : videoname_receive,
-      'videodesc' : videodesc_receive,
-      'videolink' : videolink_receive,
-      'url'       : url_receive,
-   }
-   db.board.insert_one(doc)
-   return jsonify({'msg': '저장완료'})
+  videoname_receive = request.form['videoname_give']
+  videodesc_receive = request.form['videodesc_give']
+  videolink_receive = request.form['videolink_give']
+  board_receive = request.form['id_give']
+  url_receive = request.form['url_give']
+  doc = {
+    'boardId'   : board_receive,
+    'videoname' : videoname_receive,
+    'videodesc' : videodesc_receive,
+    'videolink' : videolink_receive,
+    'url'       : url_receive,
+  }
+  db.board.insert_one(doc)
+  return jsonify({'msg': '저장완료'})
    
 # flask port
 if __name__ == '__main__':  
-	 # 5000포트 사용 중이라고 뜨면 포트 번호를 5001로 변경!
-   app.run('0.0.0.0',port=5001,debug=True)
+	# 5000포트 사용 중이라고 뜨면 포트 번호를 5001로 변경!
+  app.run('0.0.0.0',port=5001,debug=True)
