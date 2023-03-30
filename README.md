@@ -6,12 +6,16 @@
 - 개발자가 되고 싶은데 뭐부터 해야할지 감이 안오시나요?
 - 수많은 개발영상중 어떤걸 봐야할지 어지러우신가요? @_@
 ## <팀원소개/>
-- 김용식
-- 김한솔
-- 이도영
-- 최유리
+- 김용식: 전체페이지 디자인, 모달팝업 html,css 작업 , input에 입력된 입력값 post로 전송후 db에 저장, 유튜브 링크에서 썸네일 url 추출하여 db에 저장
+- 김한솔: 
+- 이도영:
+- 최유리:
 
 ## <사용기술/>
+Design
+Figma
+
+
 Front-end
 <div align="left">
 	<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=Javascript&logoColor=white" />
@@ -22,8 +26,19 @@ Front-end
 
 Back-end
 <div align="left">
-<img src="https://img.shields.io/badge/python-3776AB?style=flat&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Flask-000000?style=flat&logo=python&logoColor=white"/>
 </div>
+
+library
+<div align="left">
+<img src="https://img.shields.io/badge/Swiper-6332F6?style=flat&logo=python&logoColor=white"/>
+
+</div>
+
+
+
 
 ## <제작 기간/>
 2023-03-27 ~ 2023-03-30
