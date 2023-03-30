@@ -25,11 +25,16 @@ def home():
 def page():
   return render_template('page.html')
 
+# 모달페이지
+@app.route('/modal')
+def modal():
+  return render_template('modal.html')
+
 # 상세페이지 - 리스트 조회 (도영)
-@app.route("/modal", methods=["GET"])
+@app.route("/board", methods=["GET"])
 def value_get():
-  test_data = list(db.board.find({}, {'_id': False}))
-  return jsonify({'result': test_data})
+  board_data = list(db.board.find({}, {'_id': False}))
+  return jsonify({'result': board_data})
 
 # 상세페이지 - 키워드검색 (유리)
 @app.route("/search", methods=["POST"])
